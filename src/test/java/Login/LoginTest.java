@@ -24,6 +24,7 @@ public class LoginTest {
 
         securePage = new SecurePage(driver);
         securePage.assertOnTextBox();
+        driver.quit();
 
 
     }

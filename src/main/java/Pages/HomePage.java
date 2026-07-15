@@ -12,10 +12,23 @@ public class HomePage {
 
     //locators
     // create drivers and locators
-    private By loginLink = By.linkText("Form Authentication");
+
     public void clickLoginLink(){
-        driver.findElement(loginLink).click();
+        clickLink("Login");
     }
 
+   public void clickDropDownLink(){
+        clickLink("Dropdown");
+
+    }
+    public void clickFrameLink(){
+        clickLink("Frames");
+    }
+    private void clickLink(String LinkText){
+        // use the provided link text parameter when locating the element
+        driver.findElement(By.linkText(LinkText)).click();
+
+
+    }
 
 }
