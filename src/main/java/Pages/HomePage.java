@@ -21,9 +21,25 @@ public class HomePage {
         clickLink("Dropdown");
 
     }
+    public void clickDynamicLoading(){
+        clickLink("Dynamic Loading");
+    }
+    public void clickInfinityScrollLink(){
+        clickLink("Infinite Scroll");
+    }
+    public void clickJavaScriptAlert(){
+        clickLink("JavaScript Alerts");
+    }
     public void clickFrameLink(){
         clickLink("Frames");
     }
+    public void clickMultibleWindowLink(){
+        clickLink("Multiple Windows");
+    }
+    public void clickNotificationMessageLink(){
+        clickLink("Notification Messages");
+    }
+
     private void clickLink(String LinkText){
         // use the provided link text parameter when locating the element
         driver.findElement(By.linkText(LinkText)).click();
